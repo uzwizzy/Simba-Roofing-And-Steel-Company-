@@ -3,100 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simba Roofing Company offers you with tested and trust material for your project to wear a captivating look and with a longevity like no other | Our company rules in quality, strength, and top notch looks.</title>
+  <title>Simba Roofing & Steel | Quality Materials & Expert Services</title>
   <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: #333; }
-    .container { max-width: 1000px; margin: auto; padding: 20px; }
-    
-    /* Brand Colors: Royal Blue and Gold Accents */
-    header { 
-      background: linear-gradient(135deg, #1a365d 0%, #002352 100%); 
-      color: white; 
-      padding: 60px 20px; 
-      text-align: center; 
-      border-bottom: 5px solid #FFD700; 
+    :root {
+      --simba-orange: #f39200;
+      --simba-red: #e4002b;
+      --simba-black: #1a1a1a;
+      --bg-light: #fdfdfd;
     }
-    
-    header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; text-transform: uppercase; }
-    .tagline { font-size: 1.2rem; color: #FFD700; margin: 15px 0; font-weight: bold; }
-    
-    .cta { 
-      background: #25D366; 
-      color: white; 
-      padding: 14px 28px; 
-      text-decoration: none; 
-      border-radius: 5px; 
-      font-weight: bold; 
-      display: inline-block; 
-      margin: 10px 5px;
-      transition: transform 0.2s;
-    }
-    .cta-call { background: #E67E22; } /* Copper Orange accent */
-    .cta:hover { transform: scale(1.05); }
 
-    .section { padding: 50px 20px; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; color: var(--simba-black); background: #fff; }
+    .container { max-width: 1200px; margin: auto; padding: 0 20px; }
     
-    .card { 
-      border: 1px solid #eee; 
-      padding: 25px; 
-      border-radius: 12px; 
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: 0.3s;
-    }
-    .card:hover { border-color: #1a365d; box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
-    .card h3 { color: #1a365d; margin-top: 0; border-bottom: 2px solid #FFD700; display: inline-block; padding-bottom: 5px; }
+    /* Header Section */
+    header { text-align: center; padding: 50px 0; border-bottom: 5px solid var(--simba-orange); }
+    .logo-img { max-width: 220px; height: auto; }
+    .hero-text { margin-top: 20px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: var(--simba-red); }
+
+    /* Section Styling */
+    .section-title { text-align: center; margin-bottom: 40px; }
+    .section-title h2 { font-size: 2.2rem; text-transform: uppercase; margin-bottom: 10px; }
+    .section-title .underline { width: 80px; height: 5px; background: var(--simba-orange); margin: auto; }
+
+    /* Layout Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px 0; }
     
-    .why-us { background: #f9f9f9; }
-    footer { background: #1a365d; color: white; text-align: center; padding: 40px 20px; border-top: 5px solid #E67E22; }
-    .rating { color: #FFD700; font-size: 1.2rem; margin-bottom: 10px; }
+    /* Product & Service Cards */
+    .card { background: white; border: 1px solid #eee; transition: 0.3s ease; display: flex; flex-direction: column; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-color: var(--simba-orange); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-info { padding: 25px; }
+    .card h3 { margin: 0 0 10px; font-size: 1.3rem; color: var(--simba-black); }
+    .badge { display: inline-block; padding: 5px 12px; background: var(--simba-black); color: white; font-size: 0.75rem; font-weight: bold; margin-bottom: 15px; text-transform: uppercase; }
+    .service-badge { background: var(--simba-red); }
+
+    /* Action Buttons */
+    .btn { display: inline-block; padding: 15px 30px; text-decoration: none; font-weight: bold; text-transform: uppercase; margin: 10px; border-radius: 2px; transition: 0.3s; }
+    .btn-main { background: linear-gradient(45deg, var(--simba-orange), var(--simba-red)); color: white; }
+    .btn-dark { background: var(--simba-black); color: white; }
+    .btn:hover { opacity: 0.9; transform: scale(1.02); }
+
+    /* Footer */
+    footer { background: var(--simba-black); color: white; padding: 60px 20px; text-align: center; margin-top: 50px; }
+    .footer-line { color: var(--simba-orange); margin-bottom: 20px; font-weight: bold; }
   </style>
 </head>
 <body>
 
 <header>
   <div class="container">
-    <h1>SIMBA ROOFING AND STEEL COMPANY</h1>
-    <p class="tagline">Quality, Strength, and Top Notch Looks</p>
-    <div class="rating">★★★★★ <span style="color: white; font-size: 0.9rem;">Tested & Trusted Material</span></div>
-    <p>📞 097 0430039 | 📍 Salima, Lusaka 10101</p>
-    <a href="https://wa.me/260970430039" class="cta">WhatsApp for Quote</a>
-    <a href="tel:0970430039" class="cta cta-call">Call Experts Now</a>
+    <img src="logo.png" alt="Simba Roofing Logo" class="logo-img">
+    <div class="hero-text">Quality • Strength • Top Notch Looks</div>
+    <div style="margin-top: 30px;">
+      <a href="https://wa.me/260970430039" class="btn btn-main">Order Materials</a>
+      <a href="tel:0970430039" class="btn btn-dark">Book Service</a>
+    </div>
   </div>
 </header>
 
-<div class="section">
-  <div class="container">
-    <h2 style="text-align: center; color: #1a365d; margin-bottom: 40px;">Our Premium Services</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Roofing Installation</h3>
-        <p>Expert fitting of IBR, Versatile, and Chromadek sheets. We ensure your project wears a captivating look with maximum longevity.</p>
+<div class="container" style="padding-top: 60px;">
+  <div class="section-title">
+    <h2>Materials For Sale</h2>
+    <p>Tested and trusted steel and roofing materials for your project.</p>
+    <div class="underline"></div>
+  </div>
+  
+  <div class="grid">
+    <div class="card">
+      <img src="ibr-sheets.jpg" alt="IBR Sheets">
+      <div class="card-info">
+        <span class="badge">In Stock</span>
+        <h3>Roofing Sheets</h3>
+        <p>IBR, Versatile, Tile, and Chromadek sheets. Heavy-duty gauge for maximum longevity.</p>
       </div>
-      <div class="card">
-        <h3>Steel Structures</h3>
-        <p>Custom fabrication of carports, tank stands, and trusses. Engineered for strength and durability.</p>
+    </div>
+
+    <div class="card">
+      <img src="steel-bars.jpg" alt="Steel Sections">
+      <div class="card-info">
+        <span class="badge">In Stock</span>
+        <h3>Steel Sections</h3>
+        <p>Lipped channels, angles, plates, and tubes. High-strength Zambian standard steel.</p>
       </div>
-      <div class="card">
-        <h3>Custom Fabrication</h3>
-        <p>High-quality gates, window frames, and railings designed to provide security without sacrificing style.</p>
+    </div>
+
+    <div class="card">
+      <img src="gutter-sales.jpg" alt="Gutter Systems">
+      <div class="card-info">
+        <span class="badge">In Stock</span>
+        <h3>Gutter Components</h3>
+        <p>Complete seamless gutter kits and water harvesting accessories available.</p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="section why-us">
+<div style="background: #f4f4f4; padding: 60px 0;">
   <div class="container">
-    <h2 style="text-align: center; color: #1a365d;">The Simba Standard</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">We rule in quality and strength, providing materials that are tested to withstand the Zambian climate while maintaining a beautiful finish.</p>
-    <div class="services">
-      <div class="card" style="text-align: center;">
-        <h3 style="border:none;">Tested Quality</h3>
-        <p>Materials hand-picked for longevity and weather resistance.</p>
+    <div class="section-title">
+      <h2>Our Expert Services</h2>
+      <p>Professional installation to give your project a captivating look.</p>
+      <div class="underline"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="roof-install.jpg" alt="Roofing Service">
+        <div class="card-info">
+          <span class="badge service-badge">Service</span>
+          <h3>Roof Installation</h3>
+          <p>Full installation and replacement services. We ensure your roof wears a captivating look.</p>
+        </div>
       </div>
-      <div class="card" style="text-align: center;">
-        <h3 style="border:none;">Expert Look</h3>
-        <p>Professional finishing that makes your building stand out in Lusaka.</p>
+
+      <div class="card">
+        <img src="fabrication.jpg" alt="Steel Fabrication">
+        <div class="card-info">
+          <span class="badge service-badge">Service</span>
+          <h3>Custom Fabrication</h3>
+          <p>We design and build gates, tank stands, and trusses tailored to your strength needs.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="maintenance.jpg" alt="Maintenance">
+        <div class="card-info">
+          <span class="badge service-badge">Service</span>
+          <h3>Repair & Maintenance</h3>
+          <p>Fixing leaks and reinforcing old steel structures to ensure longevity like no other.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -104,15 +139,13 @@
 
 <footer>
   <div class="container">
-    <p><strong>SIMBA ROOFING AND STEEL COMPANY</strong></p>
-    <p>Salima, Lusaka, Zambia</p>
-    <p>Open Mon–Sat: 08:00 - 17:00</p>
-    <div style="margin-top: 20px;">
-        <a href="https://wa.me/260970430039" style="color: #FFD700; text-decoration: none;">Contact Us on WhatsApp</a>
-    </div>
-    <p style="margin-top: 30px; opacity: 0.6; font-size: 0.8rem;">© 2026 Simba Roofing And Steel Company. All Rights Reserved.</p>
+    <div class="footer-line">Simba Roofing: Our company rules in quality, strength, and top notch looks.</div>
+    <p>📍 Salima, Lusaka 10101, Zambia</p>
+    <p>📞 097 0430039 | Mon–Sat: 08:00 – 17:00</p>
+    <p style="margin-top: 40px; opacity: 0.3; font-size: 0.8rem;">© 2026 Simba Roofing And Steel Company.</p>
   </div>
 </footer>
 
 </body>
 </html>
+
